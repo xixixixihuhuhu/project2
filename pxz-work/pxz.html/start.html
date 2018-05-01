@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+       body {
+            background-color: blu;
+            overflow-x: hidden;
+        }
+        .image-wrap {
+            position:relative;
+            width:100%;
+            margin:0 auto;
+            overflow:hidden;
+        }
+        .image-wrap.small .background
+        {
+            background:url(images/background.jpg) no-repeat;
+            background-size:cover;
+            width:100%;
+            height:650px;
+            position:relative;
+        }
+        .image-wrap.small .bulb1{
+            background:url(images/shitang.jpg) no-repeat center center;
+            background-size:contain;
+            position:absolute;
+            width:155px;
+            height:412px;
+            left:53%;
+            top:25%;
+            z-index: 3;
+            animation: pendulum 10s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+            -webkit-animation: pendulum 10s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+            -moz-animation: pendulum 10s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+            -o-animation: pendulum 10s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+            transform-origin:center top;
+        }
+
+        .image-wrap.small .bulb2{
+            background:url(images/kuaidi.jpg) no-repeat center center;
+            background-size:contain;
+            position:absolute;
+            z-index: 1;
+            width:144px;
+            height:418px;
+            left:39%;
+            top:25%;
+            z-index: 2;
+            animation: pendulum 9s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+            -webkit-animation: pendulum 9s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+            -moz-animation: pendulum 9s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+            -o-animation: pendulum 9s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+            transform-origin:center top;
+        }
+        .image-wrap.small .bulb3{
+            background:url(images/chaoshi.jpg) no-repeat center center;
+            background-size:contain;
+            position:absolute;
+            width:140px;
+            height:409px;
+            left:26%;
+            top:25%;
+            z-index: 1;
+            animation: pendulum 10s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+            -webkit-animation: pendulum 10s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+            -moz-animation: pendulum 10s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+            -o-animation: pendulum 10s infinite cubic-bezier(0.310, 0.440, 0.445, 1.650);
+            transform-origin:center top;
+        }
+
+        @-webkit-keyframes
+        pendulum {
+            0%, 100% { transform: rotate(2deg); }
+            25%, 75% { transform: rotate(-4deg); }
+            50% { transform: rotate(4deg); }
+
+        }
+        pendulum1 {
+        0%, 100% { transform: rotate(.6deg); }
+        25%, 75% { transform: rotate(-1.2deg); }
+        50% { transform: rotate(1.2deg); }
+
+        }
+        @keyframes pendulum
+        {
+            0%, 100% { transform: rotate(2deg); }
+            25%, 75% { transform: rotate(-4deg); }
+            50% { transform: rotate(4deg); }
+
+        }
+        pendulum1
+        {
+        0%, 100% { transform: rotate(.6deg); }
+        25%, 75% { transform: rotate(-1.2deg); }
+        50% { transform: rotate(1.2deg); }
+
+        }
+        #a{
+            position: absolute;
+            right: 0px;
+            top:0px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-wrap small">
+    <div class="background">
+
+    </div>
+    <div class="bulb1">
+        <a href="shitang.html">食堂订单</a>
+    </div>
+    <div class="bulb2">
+        <a href="kuaidi.html">快递订单</a>
+    </div>
+    <div class="bulb3">
+        <a href="chaoshi.html">超市订单</a>
+    </div>
+</div>
+<div id="a">
+    用户名：pxz
+</div>
+</body>
+</html>
